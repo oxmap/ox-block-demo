@@ -1,9 +1,7 @@
-html {
+html, body {
   height: 100%;
 }
-body {
-  height: 100%;
-}
+
 .demo-wrappper {
   display: table;
   width: 100%;

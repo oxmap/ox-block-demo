@@ -1,0 +1,61 @@
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+}
+.demo-wrappper {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.demo-wrappper h1 {
+  color: #fff;
+  text-align: center;
+  margin: 0;
+
+  display: table-cell;
+  vertical-align: middle;
+}
+@media all and (orientation: portrait) {
+  body {
+    background: #79be6a;
+  }
+}
+@media all and (orientation: landscape) {
+  body {
+    background-color: #309ac0;
+  }
+}
+
+.orient-90 {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.orient0 {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+.orient90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.orient180 {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}

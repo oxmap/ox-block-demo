@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -57,3 +58,4 @@ html, body {
     -ms-transform: rotate(180deg);
     transform: rotate(180deg);
 }
+

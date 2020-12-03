@@ -11,8 +11,16 @@ function getMobileOS() {
     return "android";
   }
 
-  // iOS detection from: http://stackoverflow.com/a/9039885/177710
-  if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+  if ([
+    'iPad Simulator',
+    'iPhone Simulator',
+    'iPod Simulator',
+    'iPad',
+    'iPhone',
+    'iPod'
+  ].includes(navigator.platform)
+  // iPad on iOS 13 detection
+  || (navigator.userAgent.includes("Mac") && "ontouchend" in document)) {
     return "ios";
   }
 
@@ -44,7 +52,7 @@ function setClass() {
   document.getElementsByClassName(
     "text"
   )[0].textContent = `Угол ориентации = ${window.orientation}`;
-  document.body.className =browsers[getMobileOS()][window.orientation];
+  document.getElementsByTagName('html')[0].className = browsers[getMobileOS()][window.orientation];
 }
 
 window.addEventListener(

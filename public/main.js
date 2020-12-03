@@ -7,7 +7,7 @@ function getBrowser() {
       case agent.indexOf('safari') > -1:
         return 'safari';
       default:
-        return '';
+        return undefined;
     }
 }
  
@@ -19,6 +19,12 @@ const browsers = {
         '-90': 'orient0'
     },
     chrome: {
+        '180': 'orient0', 
+        '90': 'orient90',
+        '0': 'orient0',
+        '-90': 'orient90'
+    },
+    undefined: {
         '180': 'orient0', 
         '90': 'orient90',
         '0': 'orient0',

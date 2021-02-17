@@ -2,7 +2,9 @@ html,
 body {
   height: 100%;
 }
-
+button {
+  font-size: 2vw;
+}
 .demo-wrappper {
   display: table;
   width: 100%;

@@ -35,10 +35,10 @@ const browsers = {
     "-90": "orient0",
   },
   android: {
-    180: "orient0",
-    90: "orient90",
-    0: "orient0",
-    "-90": "orient90",
+    180: 'orient0',
+    90: 'orient0',
+    0: 'orient90',
+    "-90": 'orient90',
   },
   unknown: {
     180: "orient0",

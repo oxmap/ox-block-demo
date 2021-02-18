@@ -102,6 +102,6 @@ function viewportHandler() {
 
 function toggleFullScreen() {
   if (screenfull.isEnabled) {
-    screenfull.request();
+    screenfull.toggle();
   }
 }
